@@ -1,0 +1,53 @@
+name: Epic
+description: Large initiative grouping related features and tasks
+title: "[Epic] "
+labels: ["epic"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Что делаем
+      description: Крупный блок работы или инициатива
+      placeholder: Например, creator onboarding и first content generation flow
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Цель
+      description: Какой результат должен дать эпик
+      placeholder: Что должно измениться после завершения
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope_in
+    attributes:
+      label: Входит в scope
+      placeholder: |
+        - ...
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope_out
+    attributes:
+      label: Не входит в scope
+      placeholder: |
+        - ...
+        - ...
+    validations:
+      required: false
+
+  - type: textarea
+    id: done_if
+    attributes:
+      label: Готово, если
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
