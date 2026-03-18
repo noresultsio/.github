@@ -1,0 +1,20 @@
+name: Task
+description: Concrete implementation task
+title: "[Task] "
+type: task
+
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: Description
+      value: |
+        ## Что сделать
+        - ...
+
+        ## Готово, если:
+        - [ ] ...
+        - [ ] ...
+
+    validations:
+      required: true

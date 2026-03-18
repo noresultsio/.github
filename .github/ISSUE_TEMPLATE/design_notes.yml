@@ -1,0 +1,23 @@
+name: Design notes
+description: Technical design and decisions for a feature
+title: "[Design] "
+labels: ["design"]
+type: task
+
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: Description
+      value: |
+        ## Нужно решить
+        - [ ] ...
+        - [ ] ...
+
+        ## Принятые решения
+        - ...
+
+        ## Открытые вопросы
+        - ...
+    validations:
+      required: true

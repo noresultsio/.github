@@ -1,51 +1,30 @@
 name: Feature
-description: Product feature or meaningful user-facing functionality
+description: Product feature or meaningful functionality
 title: "[Feature] "
+type: feature
+
 body:
   - type: textarea
-    id: summary
+    id: content
     attributes:
-      label: Что делаем
-      placeholder: Коротко опиши суть фичи
-    validations:
-      required: true
+      label: Description
+      value: |
+        ## Что делаем
+        ...
 
-  - type: textarea
-    id: why
-    attributes:
-      label: Зачем
-      description: Какую проблему решает фича и какой нужен результат
-      placeholder: Почему это нужно
-    validations:
-      required: true
+        ## Зачем
+        ...
 
-  - type: textarea
-    id: done_if
-    attributes:
-      label: Готово, если
-      placeholder: |
+        ## Готово, если:
         - [ ] ...
         - [ ] ...
         - [ ] ...
-    validations:
-      required: true
 
-  - type: textarea
-    id: constraints
-    attributes:
-      label: Ограничения / зависимости
-      placeholder: |
+        ## Ограничения / зависимости
         - ...
-        - ...
-    validations:
-      required: false
 
-  - type: textarea
-    id: links
-    attributes:
-      label: Ссылки
-      placeholder: |
+        ## Ссылки
         - Design:
         - Spec:
     validations:
-      required: false
+      required: true
