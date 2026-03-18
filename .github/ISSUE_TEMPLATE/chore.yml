@@ -1,0 +1,21 @@
+name: Chore
+description: Report a chore or maintenance task
+title: "[Chore] "
+labels: ["chore"]
+type: chore
+
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: Description
+      value: |
+        ## Что сделать
+        ...
+
+        ## Зачем
+        ...
+
+        - [ ] Готово
+    validations:
+      required: true

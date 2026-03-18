@@ -1,0 +1,38 @@
+name: Bug
+description: Report a bug or issue
+title: "[Bug] "
+labels: ["bug"]
+type: bug
+
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: Description
+      value: |
+        ## Что сломано
+        ...
+
+        ## Ожидаемое поведение
+        ...
+
+        ## Фактическое поведение
+        ...
+
+        ## Шаги воспроизведения
+        1. ...
+        2. ...
+        3. ...
+
+        ## Окружение
+        - env:
+        - browser/device:
+        - commit/version:
+
+        ## Готово, если:
+        - [ ] баг воспроизводится и причина понятна
+        - [ ] внесено исправление
+        - [ ] сценарий больше не ломается
+        - [ ] добавлена проверка/тест, если уместно
+    validations:
+      required: true
